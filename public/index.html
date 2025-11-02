@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+  Name: Avery Killian
+  Date: 10.30.2025
+  CSC 372-01
+
+  Jokebook frontend page for displaying random jokes, categories, category jokes, 
+  and adding new jokes.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jokebook</h1>
+        <p>Laugh, search, and add your favorite jokes!</p>
+    </header>
+
+    <main>
+        <section id="random-joke-section">
+            <h2>Random Joke</h2>
+            <div id="random-joke-container">Loading...</div>
+            <button id="refresh-random-joke">Refresh Joke</button>
+        </section>
+
+        <section id="categories-section">
+            <h2>Categories</h2>
+            <div id="categories-container"></div>
+            <div id="category-search">
+                <input type="text" id="category-search-input" placeholder="Enter category name">
+                <button id="search-category-button">Search</button>
+            </div>
+        </section>
+
+        <section id="category-jokes-section">
+            <h2>Category Jokes</h2>
+            <div id="category-jokes-container"></div>
+        </section>
+
+        <section id="add-joke-section">
+            <h2>Add a New Joke</h2>
+            <form id="add-joke-form">
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                <label for="setup">Setup:</label>
+                <input type="text" id="setup" name="setup" required>
+
+                <label for="delivery">Delivery:</label>
+                <input type="text" id="delivery" name="delivery" required>
+
+                <button type="submit">Add Joke</button>
+            </form>
+            <div id="add-joke-feedback"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Avery Killian</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

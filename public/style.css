@@ -1,0 +1,178 @@
+/* 
+Name: Avery Killian
+Date: 10.30.2025
+CSC 372-01
+
+Style sheet for Jokebook frontend. Adds theme, spacing, and layout enhancements.
+*/
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ffecd2, #fcb69f);
+    color: #444;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-style: italic;
+    color: #555;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+/* Random joke styling */
+#random-joke-container, #category-jokes-container div {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+#random-joke-container {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#refresh-random-joke {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#refresh-random-joke:hover {
+    background-color: #e68900;
+}
+
+/* Categories styling */
+#categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#categories-container button, #search-category-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#categories-container button:hover, #search-category-button:hover {
+    background-color: #45a049;
+}
+
+#category-search {
+    margin-top: 10px;
+}
+
+#category-search-input {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* Category jokes styling */
+#category-jokes-container {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#category-jokes-container div {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Add joke form styling */
+#add-joke-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#add-joke-form label {
+    font-weight: bold;
+}
+
+#add-joke-form input {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#add-joke-form button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-joke-form button:hover {
+    background-color: #1976d2;
+}
+
+#add-joke-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f0f4f8;
+    color: #666;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
